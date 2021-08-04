@@ -11,7 +11,7 @@ export const PortfolioItem = ({image, name_img, title, description, url}) => {
 
                 <a href={`#${url}`} className="button button--flex button--small portfolio__button">
                     Demo
-                    <i class="uil uil-arrow-right button__icon"></i>
+                    <i className="uil uil-arrow-right button__icon"></i>
                 </a>
             </div>
         </div>

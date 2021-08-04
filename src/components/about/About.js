@@ -11,7 +11,7 @@ export const About = () => {
             <span className="section__subtitle">My Introduction</span>
 
             <div className="about__container container grid">
-                <img src={imgRene} alt="rene" className="about__img" />
+                <img src="https://res.cloudinary.com/dks25ivcf/image/upload/v1628042175/portafolio/rene_lcycm4.jpg" alt="rene" className="about__img" />
 
 
                 <div className="about__data">

@@ -1,9 +1,5 @@
 import React from 'react';
 
-import { UilPhone } from '@iconscout/react-unicons';
-import { UilEnvelope } from '@iconscout/react-unicons';
-import { UilMapMarker } from '@iconscout/react-unicons';
-import { UilMessage } from '@iconscout/react-unicons';
 
 export const Contact = () => {
     return (
@@ -13,7 +9,7 @@ export const Contact = () => {
 
             <div className="contact__container container grid">
                 <div className="contact__information">
-                    <i class="uil uil-phone contact__icon"></i>
+                    <i className="uil uil-phone contact__icon"></i>
 
                     <div>
                         <h3 className="contact__title">Call Me</h3>
@@ -22,7 +18,7 @@ export const Contact = () => {
                 </div>
 
                 <div className="contact__information">
-                    <i class="uil uil-envelope contact__icon"></i>
+                    <i className="uil uil-envelope contact__icon"></i>
 
                     <div>
                         <h3 className="contact__title">Email</h3>
@@ -31,7 +27,7 @@ export const Contact = () => {
                 </div>
 
                 <div className="contact__information">
-                    <i class="uil uil-map-marker contact__icon"></i>
+                    <i className="uil uil-map-marker contact__icon"></i>
 
                     <div>
                         <h3 className="contact__title">Location</h3>
@@ -66,7 +62,7 @@ export const Contact = () => {
                     <div>
                         <button className="button button--flex" type="submit">
                             Send Message
-                            <i class="uil uil-message button__icon"></i>
+                            <i className="uil uil-message button__icon"></i>
                         </button>
                     </div>                    
                 </form>

@@ -36,7 +36,7 @@ export const Portfolio = () => {
                     [1,2,3].map((val, index) => 
                         <SwiperSlide key={index}>
                             <PortfolioItem
-                                image={pictureA}
+                                image={"https://res.cloudinary.com/dks25ivcf/image/upload/v1628042175/portafolio/rene_lcycm4.jpg"}
                                 name_img="paginaPedidos"
                                 title="Modern Website"
                                 description="Website adaptable to all devices and animated interactions."
@@ -47,10 +47,10 @@ export const Portfolio = () => {
                     )
                 }
                 <div className="swiper-button-prev">
-                    <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                    <i className="uil uil-angle-left swiper-portfolio-icon"></i>
                 </div>
                 <div className="swiper-button-next">
-                    <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                    <i className="uil uil-angle-right swiper-portfolio-icon"></i>
                 </div>
             </Swiper>
 
