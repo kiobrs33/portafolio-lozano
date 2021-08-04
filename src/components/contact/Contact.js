@@ -13,7 +13,7 @@ export const Contact = () => {
 
             <div className="contact__container container grid">
                 <div className="contact__information">
-                    <UilPhone className="contact__icon" />
+                    <i class="uil uil-phone contact__icon"></i>
 
                     <div>
                         <h3 className="contact__title">Call Me</h3>
@@ -22,7 +22,7 @@ export const Contact = () => {
                 </div>
 
                 <div className="contact__information">
-                    <UilEnvelope className="contact__icon" />
+                    <i class="uil uil-envelope contact__icon"></i>
 
                     <div>
                         <h3 className="contact__title">Email</h3>
@@ -31,7 +31,7 @@ export const Contact = () => {
                 </div>
 
                 <div className="contact__information">
-                    <UilMapMarker className="contact__icon" />
+                    <i class="uil uil-map-marker contact__icon"></i>
 
                     <div>
                         <h3 className="contact__title">Location</h3>
@@ -66,7 +66,7 @@ export const Contact = () => {
                     <div>
                         <button className="button button--flex" type="submit">
                             Send Message
-                            <UilMessage className="button__icon" />
+                            <i class="uil uil-message button__icon"></i>
                         </button>
                     </div>                    
                 </form>

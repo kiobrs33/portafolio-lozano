@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
 
-import { UilGrid } from '@iconscout/react-unicons';
-import { UilArrowRight } from '@iconscout/react-unicons';
-import { UilTimes } from '@iconscout/react-unicons';
-import { UilCheckCircle } from '@iconscout/react-unicons';
-import { UilArrow } from '@iconscout/react-unicons';
-import { UilPen } from '@iconscout/react-unicons';
-
 export const Services = () => {
 
     const [modalA, setModalA] = useState(false);
@@ -67,7 +60,7 @@ export const Services = () => {
                 {/* Services 2 */}
                 <div className="services__content">
                     <div>
-                        <UilArrow className="services__icon" />
+                        <i className="uil uil-arrow services__icon"></i>
                         <h3 className="services__title">Fronted <br/> Developer</h3>
                     </div>
                     <span 
@@ -75,32 +68,32 @@ export const Services = () => {
                         onClick={ () => setModalB(true) }
                     >
                         View More
-                        <UilArrowRight className="button__icon" />
+                        <i className="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div className={modalB ? 'services__modal active-modal' : 'services__modal'}>
                         <div className="services__modal-content">
                             <h4 className="services__modal-title">Fronted <br/> Developer</h4>
-                            <UilTimes 
-                                className="services__modal-close" 
+                            <i 
+                                className="uil uil-times services__modal-close"
                                 onClick={() => setModalB(false)}
-                            />
+                            ></i>
 
                             <ul className="services__modal-services">
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>I develop the user interface.</p>
                                 </li>
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>Web page development.</p>
                                 </li>
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>I create us element interactions.</p>
                                 </li>
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>I position your company brand.</p>
                                 </li>
                             </ul>
@@ -111,7 +104,7 @@ export const Services = () => {
                 {/* Services 3 */}
                 <div className="services__content">
                     <div>
-                        <UilPen className="services__icon"/>
+                        <i className="uil uil-pen services__icon"></i>
                         <h3 className="services__title">Branding <br/> Designer</h3>
                     </div>
                     <span 
@@ -119,32 +112,32 @@ export const Services = () => {
                         onClick={ () => setModalC(true) }
                     >
                         View More
-                        <UilArrowRight className="button__icon" />
+                        <i className="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div className={modalC ? 'services__modal active-modal' : 'services__modal'}>
                         <div className="services__modal-content">
                             <h4 className="services__modal-title">Branding <br/> Designer</h4>
-                            <UilTimes 
-                                className="services__modal-close" 
+                            <i 
+                                className="uil uil-times services__modal-close"
                                 onClick={() => setModalC(false)}
-                            />
+                            ></i>
 
                             <ul className="services__modal-services">
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>I develop the user interface.</p>
                                 </li>
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>Web page development.</p>
                                 </li>
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>I create us element interactions.</p>
                                 </li>
                                 <li className="services__modal-service">
-                                    <UilCheckCircle className="services__modal-icon" />
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
                                     <p>I position your company brand.</p>
                                 </li>
                             </ul>

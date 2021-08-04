@@ -651,14 +651,12 @@ img {
     background-color: var(--container-color);
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: .5rem;
-    /* box-shadow: 0 2px 4px rgba($color: #000000, $alpha: .15); */
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     transition: .3s;
 }
 
 .services__content:hover {
-    /* box-shadow: 0 4px 8px rgba($color: #000000, $alpha: .2); */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .2);
 }
 
 /* No se puede controlar el tamaño del icono por que es componente */
@@ -690,7 +688,6 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: rgba($color: #000000, $alpha: .5); */
     background-color: rgba(0, 0, 0, .5);
     display: flex;
     align-items: center;
@@ -1194,7 +1191,7 @@ img {
         justify-content: center;
     }
     .services__icon {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .services__content {
         padding: 6rem 0 2rem 2.5rem;

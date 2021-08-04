@@ -7,9 +7,6 @@ import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
-import { UilAngleRight } from '@iconscout/react-unicons';
-import { UilAngleLeft } from '@iconscout/react-unicons';
-
 import { PortfolioItem } from './PortfolioItem';
 
 import pictureA from '../../img/rene.jpg';
@@ -50,10 +47,10 @@ export const Portfolio = () => {
                     )
                 }
                 <div className="swiper-button-prev">
-                    <UilAngleLeft className="swiper-portfolio-icon" />
+                    <i class="uil uil-angle-left swiper-portfolio-icon"></i>
                 </div>
                 <div className="swiper-button-next">
-                    <UilAngleRight className="swiper-portfolio-icon" />
+                    <i class="uil uil-angle-right swiper-portfolio-icon"></i>
                 </div>
             </Swiper>
 
