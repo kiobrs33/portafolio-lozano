@@ -1,5 +1,4 @@
 import React from 'react';
-import imgRene from '../../img/lz_bg2.png';
 
 import { data } from '../../data/data';
 
@@ -34,11 +33,11 @@ export const Home = () => {
                         </svg>
                     </div>
                     <div className="home__data">
-                        <h1 className="home__title">Hi, I'm {data.name}</h1>
+                        <h1 className="home__title">Hola, Soy {data.name}</h1>
                         <h3 className="home__subtitle">{data.profession}</h3>
                         <p className="home__description">{data.description}</p>
                         <a href="#contact" className="button button--flex">
-                            Contact Me <i className="uil uil-message button__icon"></i>
+                            Contactame <i className="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -47,7 +46,7 @@ export const Home = () => {
                     <a href="#about" className="home__scroll-button button--flex">
                         <i className="uil uil-mouse home__scroll-mouse"></i>
                         <span className="home__scroll-name">
-                            Scroll Down
+                            Desplazarse hacia abajo
                         </span>
                         <i className="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>

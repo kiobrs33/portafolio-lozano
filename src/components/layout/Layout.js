@@ -8,7 +8,7 @@ import { Qualification } from '../qualification/Qualification';
 import { Services } from '../services/Services';
 import { Portfolio } from '../portfolio/Portfolio';
 import { Project } from '../project/Project';
-import { Testimonial } from '../testimonial/Testimonial';
+// import { Testimonial } from '../testimonial/Testimonial';
 import { Contact } from '../contact/Contact';
 import { Footer } from '../ui/footer/Footer';
 import { ScrollTop } from '../ui/scroll_top/ScrollTop'
@@ -33,7 +33,7 @@ export const Layout = () => {
 
                 <Project/>
 
-                <Testimonial/>
+                {/* <Testimonial/> */}
 
                 <Contact/>
             </div>

@@ -10,7 +10,7 @@ export const Skills = () => {
             <span className="section__subtitle">My Tecnical Level</span>
             <div className="skills__container container grid">
                 {
-                    data.skills.map(({skill_title, skill_time, skill_icon, subskills}, index ) => (
+                    data.skills.map(({ skill_title, skill_time, skill_icon, subskills }, index) => (
                         <SkillsItem
                             key={index}
                             title={skill_title}

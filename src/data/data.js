@@ -1,74 +1,117 @@
+// Iconos de Unicons
+
 export const data = {
-    name: 'Rene Lozano',
-    profession: 'Fronted Developer',
-    description: 'High level experience in web design and knowledge, producing quality work.',
-    about: 'Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.',
-    years_experience: '2',
+    first_name: 'René',
+    name: 'René Lozano',
+    profession: 'Desarrollador Fronted',
+    description: 'Experiencia en el desarrollo de sitios web con diferentes frameworks y librerias de hoy en dia.',
+    about: 'Desarrollador Fronted, con amplios conocimientos y experiencia, trabajando en tecnologías web y backend, entregando trabajos de calidad.',
+    years_experience: '1',
     completed_project: '3',
     companies_worked: '3',
     skills: [
         {
-            skill_title: 'Fronted Developer',
-            skill_time: 'More than 3 years',
+            skill_title: 'Desarrollador Web',
+            skill_time: 'Mas de 1 año',
             skill_icon: 'uil uil-brackets-curly',
             subskills: [
                 {
                     name: 'HTML',
-                    percent: '90',
+                    percent: '80',
                 },
                 {
                     name: 'CSS',
-                    percent: '100',
+                    percent: '70',
                 },
                 {
                     name: 'Javascript',
-                    percent: '55',
+                    percent: '80',
                 },
                 {
                     name: 'React Js',
-                    percent: '95',
+                    percent: '90',
+                },
+                {
+                    name: 'Redux',
+                    percent: '80',
+                },
+                {
+                    name: 'Bootstrap',
+                    percent: '80',
+                },
+                {
+                    name: 'Sass',
+                    percent: '50',
+                },
+                {
+                    name: 'Laravel',
+                    percent: '70',
+                },
+                {
+                    name: 'Metodologia Bem',
+                    percent: '80',
+                },
+                {
+                    name: 'Type Script',
+                    percent: '85',
                 },
             ],
         },
         {
             skill_title: 'Backend Developer',
-            skill_time: 'More than 1 years',
+            skill_time: 'Mas de 1 año',
             skill_icon: 'uil uil-server-network',
             subskills: [
                 {
-                    name: 'PHP',
-                    percent: '33',
+                    name: 'Node Js',
+                    percent: '70',
                 },
                 {
-                    name: 'Node Js',
-                    percent: '55',
+                    name: 'Express Js',
+                    percent: '80',
                 },
                 {
                     name: 'Firebase',
                     percent: '60',
                 },
                 {
-                    name: 'Laravel',
-                    percent: '34',
+                    name: 'AWS',
+                    percent: '50',
+                },
+                {
+                    name: 'SQL',
+                    percent: '60',
+                },
+                {
+                    name: 'MySQL',
+                    percent: '65',
+                },
+                {
+                    name: 'MongoDB',
+                    percent: '50',
+                },
+                {
+                    name: 'PHP',
+                    percent: '40',
                 },
             ],
         },
         {
-            skill_title: 'Designer',
-            skill_time: 'More than 3 months',
-            skill_icon: 'uil uil-swatchbook',
+            skill_title: 'Mobile Developer',
+            skill_time: 'Mas de 1/2 año',
+            skill_icon: 'uil uil-mobile-android',
             subskills: [
                 {
-                    name: 'Figma',
-                    percent: '35',
+                    name: 'Flutter',
+                    percent: '60',
                 },
                 {
-                    name: 'Sketch',
-                    percent: '24',
+                    name: 'Android',
+                    percent: '30',
                 },
                 {
-                    name: 'Photoshop',
-                    percent: '44',
+                    name: 'React Native',
+                    percent: '30',
                 },
             ],
         },
@@ -81,22 +124,22 @@ export const data = {
             time_end: '2019'
         },
         {
-            profession: 'Diseño de Software e Integracion de Sistemas',
-            description: 'Tecsup Arequipa - Peru',
-            time_starting: '2017',
-            time_end: '2019'
+            profession: 'React Js (Hooks y MERN)',
+            description: 'Udemy',
+            time_starting: '2020',
+            time_end: '2020'
         },
         {
-            profession: 'Diseño de Software e Integracion de Sistemas',
-            description: 'Tecsup Arequipa - Peru',
-            time_starting: '2017',
-            time_end: '2019'
+            profession: 'Node Js',
+            description: 'Udemy',
+            time_starting: '2020',
+            time_end: '2020'
         }
     ],
     works: [
         {
             job: 'Analista Programador',
-            description: 'Biox - Perú',
+            description: 'Biox-Perú',
             time_starting: '2019',
             time_end: '2020'
         },
@@ -109,53 +152,61 @@ export const data = {
     ],
     services: [
         {
-            title: 'Fronted Developer',
+            title: 'Desarrollador Fronted',
+            icon: 'uil uil-arrow',
             points: [
-                'I develop the user interface.',
-                'Web page development.',
-                'I create us element interactions.',
-                'I position your company brand.',
+                'Programo la estructura html y css de la parte Web.',
+                'Consumo API REST.',
+                'Programo funcionalidades CRUD basicas para la web',
+                'Diseño vistas reponsive(Movil, escrotrio y tablert)',
+                'Y mas'
             ]
         },
         {
-            title: 'Backend Developer',
+            title: 'Desarrollador Backend',
+            icon: 'uil uil-server',
             points: [
-                'I develop the user interface.',
-                'Web page development.',
-                'I create us element interactions.',
-                'I position your company brand.',
+                'Diseño los enpoints par el consumo de datos',
+                'Programo el servidor, los puertos, variables de entorno,etc',
+                'Manejo ed cors y protocolos',
+                'Y mas'
             ]
         },
         {
-            title: 'Ui/UX',
+            title: 'Desarrollador Móvil',
+            icon: 'uil uil-mobile-android',
             points: [
-                'I develop the user interface.',
-                'Web page development.',
-                'I create us element interactions.',
-                'I position your company brand.',
+                'Diseño las vistas, formularios, estilos, etc.',
+                'Consumo API REST.',
+                'Vistas adaptables para diferentes tamaño de dispoitivos',
+                'Y mas'
             ]
         }
     ],
     projects: [
         {
-            project_name: 'Modern Website',
-            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/reneLz.jpg?alt=media&token=9405d186-606b-4e6a-9539-4cc814e57d39',
-            project_description: 'Web developer, with extensive knowledge and years of experience, working in web',
+            project_name: 'Calendario de apuntes',
+            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/portafolio-lozano%2Fcalendar1.PNG?alt=media&token=01f6da28-9684-4a83-b812-d0758a1d4a41',
+            project_description: 'Es una aplicacion web para guardar eventos con fechas, pudiendo establecer el inicio y el final del evento',
+            project_link: 'https://calendar-bac-kend.herokuapp.com',
         },
         {
-            project_name: 'Modern Website',
-            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/reneLz.jpg?alt=media&token=9405d186-606b-4e6a-9539-4cc814e57d39',
-            project_description: 'Web developer, with extensive knowledge and years of experience, working in web',
+            project_name: 'Sitio de votos',
+            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/portafolio-lozano%2Fbandbames1.PNG?alt=media&token=d8201bf6-77f7-4926-a1ff-dcfa51fa8bb8',
+            project_description: 'Es una aplicacion web en tiempo Real para votar sobre alguna banda de musica, tiene graficos que permite visualizar el alcance de los votos',
+            project_link: 'https://bandnames-r.herokuapp.com/',
         },
         {
-            project_name: 'Modern Website',
-            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/reneLz.jpg?alt=media&token=9405d186-606b-4e6a-9539-4cc814e57d39',
-            project_description: 'Web developer, with extensive knowledge and years of experience, working in web',
+            project_name: 'Buscador de Gifs',
+            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/portafolio-lozano%2Fgifexpert.PNG?alt=media&token=f456dec9-bf54-47ee-a83b-fae9f75bf9c6',
+            project_description: 'Es una aplicacion para la busqueda de gifs, puede buscarse cualquier cosa que le interese al usuario.',
+            project_link: 'https://kiobrs33.github.io/Gifs-App-React/',
         },
         {
-            project_name: 'Modern Website',
-            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/reneLz.jpg?alt=media&token=9405d186-606b-4e6a-9539-4cc814e57d39',
-            project_description: 'Web developer, with extensive knowledge and years of experience, working in web',
-        }
+            project_name: 'Diario',
+            project_img: 'https://firebasestorage.googleapis.com/v0/b/fir-ebc49.appspot.com/o/portafolio-lozano%2Fjournal-app.PNG?alt=media&token=766880ad-9248-4bae-993c-eb28f0d69995',
+            project_description: 'Es una aplicacion donde se puede crear notas con archivo multimedia(imagenes) privado para cada usuario',
+            project_link: 'https://calendar-bac-kend.herokuapp.com',
+        },
     ]
 }

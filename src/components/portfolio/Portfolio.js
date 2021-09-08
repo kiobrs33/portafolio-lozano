@@ -8,17 +8,19 @@ import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
 import { PortfolioItem } from './PortfolioItem';
-
-import pictureA from '../../img/rene.jpg';
+import { data } from '../../data/data';
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 export const Portfolio = () => {
+
+    const { projects } = data;
+
     return (
-        <section className="portfolio section" id="portofolio">
-            <h2 className="section__title">Portfolio</h2>
-            <span className="section__subtitle">Most Recent work</span>
+        <section className="portfolio section" id="portfolio">
+            <h2 className="section__title">Portafolio</h2>
+            <span className="section__subtitle">Trabajo mas recientes</span>
 
             <Swiper
                 cssMode={true}
@@ -33,15 +35,13 @@ export const Portfolio = () => {
                 loop={true}
             >
                 {
-                    [1,2,3].map((val, index) => 
+                    projects.map((item, index) => 
                         <SwiperSlide key={index}>
                             <PortfolioItem
-                                image={"https://res.cloudinary.com/dks25ivcf/image/upload/v1628042175/portafolio/rene_lcycm4.jpg"}
-                                name_img="paginaPedidos"
-                                title="Modern Website"
-                                description="Website adaptable to all devices and animated interactions."
-                                url="wwww.naan.com"
-                                
+                                image={item.project_img}
+                                title={item.project_name}
+                                description={item.project_description}
+                                url={item.project_link}
                             />
                         </SwiperSlide>
                     )

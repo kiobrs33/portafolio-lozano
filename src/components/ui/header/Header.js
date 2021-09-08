@@ -1,74 +1,49 @@
 import React, { useState } from 'react';
 
-//IconsCout
-import { UilEstate } from '@iconscout/react-unicons';
-import { UilUser } from '@iconscout/react-unicons';
-import { UilFile } from '@iconscout/react-unicons';
-import { UilBriefcaseAlt } from '@iconscout/react-unicons';
-import { UilScenery } from '@iconscout/react-unicons';
-import { UilMessage } from '@iconscout/react-unicons';
-import { UilTimes } from '@iconscout/react-unicons';
-import { UilApps } from '@iconscout/react-unicons';
-import { UilMoon } from '@iconscout/react-unicons';
+import { data } from '../../../data/data';
 
 export const Header = () => {
 
-    const [showMenu, setShowMenu] = useState(false);
-    
+    const [ showMenu, setShowMenu ] = useState(false);
+    const [iconTheme, setIconTheme] = useState()
+
     const handleOpen = () => {
         setShowMenu(true);
     }
-
     const handleClose = () => {
         setShowMenu(false);
     }
 
-    
+    // const darkTheme = 'dark';
+    // const lightTheme = 'light';
+    // let theme = localStorage.getItem('theme');
 
-    
+    // if( theme ){
+    //     document.body.classList.add(theme)
+    // }else{
 
+    //     document.body.classList.add(lightTheme)
+    // }
 
-    // themeButton.addEventListener('click', () => {
-    //     document.body.classList.toggle(darkTheme);
-    //     themeButton.classList.toggle(iconTheme);
+    // const handleChangeTheme = () => {
+    //     if( theme === darkTheme ){
+    //         document.body.classList.replace(darkTheme, lightTheme)
 
-    //     localStorage.setItem('selected-theme', getCurrentTheme())
-    //     localStorage.setItem('selected-icon', getCurrentIcon())
-    // })
-    // console.log(themeButton);
+    //         localStorage.setItem('theme', lightTheme);
+    //         theme = lightTheme;
+    //     }else{
+    //         document.body.classList.replace(lightTheme,darkTheme);
 
-    // const themeButton = document.getElementById('theme-button');
-    // const darkTheme = 'dark-theme';
-    // const iconTheme = 'uil-sun';
-
-    // const selectedTheme = localStorage.getItem('selected-theme');
-    // const selectedIcon = localStorage.getItem('selected-icon');
-
-    // const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-
-    // //Para cambiar el Icono del boton
-    // const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
-    //     console.log(document.body.classList);
-    // if(selectedTheme){
-    //     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-    //     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme);
+    //         localStorage.setItem('theme', darkTheme);
+    //         theme = darkTheme;
+    //     }
     // }
 
     const handleChangeTheme = () => {
-        document.body.classList.toggle('dark')
-
-        //Color Theme
-
-        // document.body.classList.toggle(darkTheme);
-        // themeButton.classList.toggle(iconTheme);
-
-        // localStorage.setItem('selected-theme', getCurrentTheme())
-        // localStorage.setItem('selected-icon', getCurrentIcon())
+        const value = document.body.classList.toggle('dark');
+        setIconTheme(value);
     }
 
-
-
-    //Background Color of the Header
     const scrollHeader = () => {
         const nav = document.getElementById('header');
         window.scrollY >= 80 ? nav.classList.add('scroll-header') : nav.classList.remove('scroll-header');
@@ -76,11 +51,11 @@ export const Header = () => {
     window.addEventListener('scroll',scrollHeader);
 
     return (
-        
+
         <header className='header' id="header">
             <nav className="nav container">
 
-                <a href="#home" className="nav__logo">Rene</a>
+                <a href="#home" className="nav__logo">{ data.first_name } </a>
 
                 <div className={`nav__menu ${showMenu && 'show-menu'}`} id="nav-menu">
 
@@ -92,7 +67,7 @@ export const Header = () => {
                                 className="nav__link"
                                 onClick={handleClose}
                             >
-                                <UilEstate className="nav__icon" /> Home
+                                <i className="uil uil-estate nav__icon"></i> Inicio
                             </a>
                         </li>
 
@@ -102,7 +77,7 @@ export const Header = () => {
                                 className="nav__link"
                                 onClick={handleClose}
                             >
-                                <UilUser className="nav__icon" /> About
+                                <i className="uil uil-user nav__icon"></i> Acerca
                             </a>
                         </li>
 
@@ -112,7 +87,7 @@ export const Header = () => {
                                 className="nav__link"
                                 onClick={handleClose}
                             >
-                                <UilFile className="nav__icon" /> Skills
+                                <i className="uil uil-file nav__icon"></i> Habilidades
                             </a>
                         </li>
 
@@ -122,17 +97,17 @@ export const Header = () => {
                                 className="nav__link"
                                 onClick={handleClose}
                             >
-                                <UilBriefcaseAlt className="nav__icon" /> Services
+                                <i className="uil uil-briefcase-alt nav__icon"></i> Servicios
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a 
-                                href="#portofolio" 
+                                href="#portfolio" 
                                 className="nav__link"
                                 onClick={handleClose}
                             >
-                                <UilScenery className="nav__icon" /> Portofolio
+                                <i className="uil uil-scenery nav__icon"></i> Portafolio
                             </a>
                         </li>
 
@@ -142,34 +117,34 @@ export const Header = () => {
                                 className="nav__link"
                                 onClick={handleClose}
                             >
-                                <UilMessage className="nav__icon" /> Contactme
+                                <i className="uil uil-message nav__icon"></i> Contactame
                             </a>
                         </li>
                     </ul>
 
-                    <UilTimes 
-                        className="nav__close" 
-                        id="nav-close"
-                        onClick={handleClose}
-                    />
+                    <i 
+                        className="uil uil-times nav__close" 
+                        id="nav-close" 
+                        onClick={handleClose} 
+                    ></i>
 
                 </div>
 
                 <div className="nav__btns">
-                    {/* Theme change button */}
-                    <UilMoon 
-                        className="change-theme" 
-                        id="theme-button" 
+                    <i
+                        className={`${ iconTheme ? 'uil uil-sun' : 'uil uil-moon'} change-theme`}
+                        id="theme-button"
                         onClick={handleChangeTheme}
-                    />
-
+                    ></i>
+                    
                     <div 
                         className="nav__toggle" 
                         id="nav-toggle"
                         onClick={handleOpen}
                     >
-                        <UilApps />
+                        <i className="uil uil-apps"></i>
                     </div>
+
                 </div>
 
             </nav>

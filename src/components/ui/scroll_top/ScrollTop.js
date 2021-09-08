@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { UilArrowUp } from '@iconscout/react-unicons';
-
 export const ScrollTop = () => {
 
     const scrollUp = () => {
@@ -13,7 +11,7 @@ export const ScrollTop = () => {
 
     return (
         <a href="#home" className="scrollup" id="scroll-up">
-            <UilArrowUp className="scrollup__icon" />
+            <i className="uil uil-arrow-up scrollup__icon"></i>
         </a>
     )
 }

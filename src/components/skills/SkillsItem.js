@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-export const SkillsItem = ({title, description, icon, skills_data}) => {
+export const SkillsItem = ({ title, description, icon, skills_data }) => {
 
     const [state, setState] = useState(false);
 
     return (
-        <div 
+        <div
             className={`skills__content ${state ? 'skills__open' : 'skills__close'}`}
             onClick={() => setState(!state)}
         >
@@ -20,14 +20,14 @@ export const SkillsItem = ({title, description, icon, skills_data}) => {
 
             <div className="skills__list grid">
                 {
-                    skills_data.map(({name, percent}, index) => (
+                    skills_data.map(({ name, percent }, index) => (
                         <div key={index} className="skills__data">
                             <div className="skills__titles">
                                 <h3 className="skills__name">{name}</h3>
                                 <span className="skills__number">{percent}%</span>
                             </div>
                             <div className="skills__bar">
-                                <span className="skills__percentage skills__html"></span>
+                                <span className="skills__percentage" style={{ width: `${percent}%` }}></span>
                             </div>
                         </div>
                     ))

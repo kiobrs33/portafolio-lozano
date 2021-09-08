@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
-import imgA from '../../img/rene.jpg';
+import imgA from '../../img/rene_lentes.jpg';
 
 import SwiperCore, { Pagination } from 'swiper/core';
 SwiperCore.use([Pagination]);
@@ -14,14 +14,14 @@ SwiperCore.use([Pagination]);
 export const Testimonial = () => {
     return (
         <section className="testimonial section">
-            <h2 className="section__title">Testimonial</h2>
-            <span className="section__subtitle">My client saying</span>
+            <h2 className="section__title">Testimonios</h2>
+            <span className="section__subtitle">Mis testimonios</span>
 
             <Swiper
                 loop={true}
                 grabCursor={true}
                 spaceBetween={48}
-                pagination={{ 
+                pagination={{
                     "dynamicBullets": true,
                     el: ".swiper-pagination",
                     clickable: true,

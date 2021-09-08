@@ -1,8 +1,5 @@
 import React from 'react';
-
-import { UilFacebookF } from '@iconscout/react-unicons';
-import { UilInstagram } from '@iconscout/react-unicons';
-import { UilLinkedinAlt } from '@iconscout/react-unicons';
+import { data } from '../../../data/data';
 
 export const Footer = () => {
     return (
@@ -10,38 +7,38 @@ export const Footer = () => {
             <div className="footer__bg">
                 <div className="footer__container container grid">
                     <div>
-                        <h1 className="footer__title">Alexa</h1>
-                        <span className="footer__subtitle">Frontend Developer</span>
+                        <h1 className="footer__title">{data.first_name}</h1>
+                        <span className="footer__subtitle">Programador</span>
                     </div>
 
                     <ul className="footer__links">
                         <li>
-                            <a href="#services" className="footer__link" >Services</a>
+                            <a href="#services" className="footer__link" >Servicios</a>
                         </li>
                         <li>
-                            <a href="#portfolio" className="footer__link" >Portfolio</a>
+                            <a href="#portfolio" className="footer__link" >Portafolio</a>
                         </li>
                         <li>
-                            <a href="#contact" className="footer__link" >Contactme</a>
+                            <a href="#contact" className="footer__link" >Contactame</a>
                         </li>
                     </ul>
 
                     <div className="footer__socials">
-                        <a href="https://wwww.facebook.com/"  rel="noreferrer" target="_blank" className="footer__social">
-                            <UilFacebookF />
+                        <a href="https://wwww.facebook.com/" rel="noreferrer" target="_blank" className="footer__social">
+                            <i className="uil uil-facebook-f"></i>
                         </a>
 
                         <a href="https://www.instagram.com/" rel="noreferrer" target="_blank" className="footer__social">
-                            <UilInstagram />
+                        <i className="uil uil-instagram"></i>
                         </a>
 
                         <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank" className="footer__social">
-                            <UilLinkedinAlt />
+                        <i className="uil uil-linkedin-alt"></i>
                         </a>
                     </div>
                 </div>
 
-                <p className="footer__copy">&#169; Bedicome. All right reserved</p>
+                <p className="footer__copy">&#169; {data.name}. Todos los derechos reservados.</p>
             </div>
         </footer>
     )
